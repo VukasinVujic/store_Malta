@@ -6,12 +6,14 @@ import { OffersComponent } from '../app/pages/offers/offers.component';
 import {MatTableModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http'; 
 import { OfferService } from './offer.service';
+import { HeaderComponent } from './layouts/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     OffersComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
