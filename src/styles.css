@@ -4,3 +4,10 @@
 body {
     background-color: lightblue ;
 }
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
