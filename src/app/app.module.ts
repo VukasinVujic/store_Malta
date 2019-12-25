@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { OffersComponent } from '../app/pages/offers/offers.component';
 import {MatTableModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http'; 
-import { OfferService } from './offer.service';
+import { OfferSubscriptionService } from './offerSubscription.service';
 import { HeaderComponent } from './layouts/header/header.component';
 import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
 
@@ -23,7 +23,7 @@ import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.comp
     MatTableModule,
     HttpClientModule,
   ],
-  providers: [OfferService],
+  providers: [OfferSubscriptionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

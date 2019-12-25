@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import {OfferService} from '../../offer.service';
-import {Offer, ObjectOffer} from '../../Offer';
+import {OfferSubscriptionService} from '../../offerSubscription.service';
+import { ObjectOffer} from '../../Offer';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,14 +11,14 @@ import { Subscription } from 'rxjs';
 export class OffersComponent implements OnInit, OnDestroy {
   
 
-  constructor(private offerService: OfferService) { }
+  constructor(private offerSubscriptionService: OfferSubscriptionService) { }
 
   offersList:  ObjectOffer[] ;
   subscription: Subscription;
  
   ngOnInit() {
 
-    this.subscription = this.offerService.getOffers().subscribe(data => {
+    this.subscription = this.offerSubscriptionService.getOffers().subscribe(data => {
       this.offersList = [...data.offers];
     })
 
