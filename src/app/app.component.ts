@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'storeMalta';
+
+  condition: boolean = true; // to show offers or subscriptions
+
 }

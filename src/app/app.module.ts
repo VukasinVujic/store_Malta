@@ -7,6 +7,7 @@ import {MatTableModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http'; 
 import { OfferService } from './offer.service';
 import { HeaderComponent } from './layouts/header/header.component';
+import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { HeaderComponent } from './layouts/header/header.component';
     AppComponent,
     OffersComponent,
     HeaderComponent,
+    SubscriptionsComponent,
   ],
   imports: [
     BrowserModule,
